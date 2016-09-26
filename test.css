@@ -1,0 +1,24 @@
+body{
+    background-image:url("https://www.peppermillreno.com/library/images/backgrounds/dining_bimini-3.jpg");
+}
+.textType{
+    color:floralwhite !important;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px 2px black;
+    text-align:center;
+    
+}
+.allCards {
+    background-color:rgba(73, 73, 73,9 );
+    border: 2px solid black;
+    border-radius: 4px;
+    background-repeat:no-repeat;
+    height:450px; 
+    background-size: 100% 100%;
+    opacity: 0.8; filter: alpha(opacity=50);
+    margin:6px;
+     text-align:center;
+    color: white;
+    font-family: 'Berkshire Swash', cursive;
+     text-shadow: 2px 2px 2px black; 
+}

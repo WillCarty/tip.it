@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link type="text/css" href="test.css" rel="stylesheet" />
+    <link type="text/css" href="weatherTemplate.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/bd0fb5033f2576166c03cfc1612cbc44.js"
+        async="async"></script>
+
+
+
+</head>
+
+<body>
+
+    <body>
+        <!--Nav bar  -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="#">Tip.it!</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="address" placeholder="Enter Address or Zip" />
+                        </div>
+                        <button type="button" id="lookupLocation" class="btn btn-success"> <span class="glyphicon glyphicon-plus"></button>
+                    </form>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Severe Weather Alerts<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+
+                                </li>
+
+                            </ul>
+                        </li>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li></li>
+                            <li>
+                                <div class="fb-share-button navbar-brand" data-href="" data-layout="button_count" data-mobile-iframe="true">
+                                    <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse"><img src="http://picresize.com/picresize-assets/gfx/share-facebook.png" /></a>
+                            </li>
+                        </ul>
+
+                        </div>
+                </div>
+        </nav>
+
+        <div class="jumbotron " style="margin-left: 15px; text-align:center; background-color:rgba(73,73,73,.7)">
+
+
+            <h1 class="textType">Alway's know how much to tip.</h1>
+
+        </div>
+        <div class="row col-xs-8 col-sm-6 col-md-4 col-lg-3 ">
+        </div>
+        <div class="row" style="height:40px">
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="container" id="newCard2">
+                </div>
+                <div>
+
+                    <div class="container" id="newCard">
+                        <div id="weatherCard" class=" col-xs-10 col-sm-8 col-md-6 col-lg-11 @@class@@ allCards" style="margin-left: 30px;">
+
+                            <div class="row " style=" text-align:left">
+                                <div class="col-md-12 divbutton">
+                                    <h4 class="textType">Enter Bill Amount:</h4>
+
+                                </div>
+                                <div class="row" style="text-align:center">
+                                    <input type="text" id="billAmount" placeholder="Bill Amount" />
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="container">
+                                        <div class="dropDown" style="text-align:center">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Was The Service?
+                                              <span class="caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Excellent 25% tip.</a></li>
+                                                <li><a href="#">Good 20% tip.</a></li>
+                                                <li><a href="#">Average 15% tip.</a></li>
+                                                <li><a href="#">Horrible 10% tip.</a></li>
+                                                <li class="divider"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="height:40px">
+                                    <div class="col-md-4"></div>
+                                    <div id="iconBox" class="col-md-4"></div>
+                                    <div class="col-md-4"></div>
+
+                                </div>
+                                <div class="row" style="height:20px; text-align:center">
+                                    <div class="col-md-4"></div>
+                                    <div class="col-md-4">
+                                        <h2 sytle="margin-left:3px">How many diners in your party?</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="container">
+                                            <div class="dropDown" style="text-align:center">
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Was The Service?
+                                              <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Excellent 25% tip.</a></li>
+                                                    <li><a href="#">Good 20% tip.</a></li>
+                                                    <li><a href="#">Average 15% tip.</a></li>
+                                                    <li><a href="#">Horrible 10% tip.</a></li>
+                                                    <li class="divider"></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="height:10px"></div>
+
+                                    <div class="row" style="height:10px"></div>
+                                    <div class="row">
+
+                                    </div>
+                                    <div class="row" style="height:10px">
+
+                                    </div>
+
+                                    <div class="row">
+                                        <h4>You total tip is:</h4>
+                                    </div>
+                                    <div class="row">
+                                        <h2>1.55</h2>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <p style="text-align:center">Each.</p>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+    </body>
+
+
+
+
+
+</html>
