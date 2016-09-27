@@ -2,7 +2,7 @@
 
 <head>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="tipCal.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link type="text/css" href="test.css" rel="stylesheet" />
     <link type="text/css" href="weatherTemplate.css" rel="stylesheet" />
@@ -96,7 +96,7 @@
 
                                 </div>
                                 <div class="row" style="text-align:center">
-                                    <input type="text" id="billAmount" placeholder="Bill Amount" />
+                                    <input style="color:black" type="text" id="billAmount" placeholder="Bill Amount" />
 
                                 </div>
 
@@ -105,17 +105,18 @@
                                         <div class="dropDown" style="text-align:center">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Was The Service?
                                               <span class="caret"></span></button>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Excellent 25% tip.</a></li>
-                                                <li><a href="#">Good 20% tip.</a></li>
-                                                <li><a href="#">Average 15% tip.</a></li>
-                                                <li><a href="#">Horrible 10% tip.</a></li>
-                                                <li class="divider"></li>
+                                            <ul class="dropdown-menu" style="text-align:center">
+                                                
+                                                <li><button id="excellent" type="button" class="btn btn-success btn-block">Excellent 25%</button></li>
+                                                <li><button id="good " type="button" class="btn btn-primary btn-block">Good 20%</button></li>
+                                                <li><button id="average" type="button" class="btn btn-warning btn-block">Average 15%</button></li>
+                                                <li><button id="bad" type="button" class="btn btn-danger btn-block">Bad 10%</button></li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row" style="height:40px">
+                                <div class="row" style="height:10px">
                                     <div class="col-md-4"></div>
                                     <div id="iconBox" class="col-md-4"></div>
                                     <div class="col-md-4"></div>
@@ -129,17 +130,21 @@
                                     <div class="row">
                                         <div class="container">
                                             <div class="dropDown" style="text-align:center">
-                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Was The Service?
+                                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                               <span class="caret"></span></button>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="#">Excellent 25% tip.</a></li>
-                                                    <li><a href="#">Good 20% tip.</a></li>
-                                                    <li><a href="#">Average 15% tip.</a></li>
-                                                    <li><a href="#">Horrible 10% tip.</a></li>
-                                                    <li class="divider"></li>
+                                                    <li><input id="1diner" style="color:black; text-align:center" type="checkbox">One </input></li>
+                                                    <li><input id="2diner" style="color:black; text-align:center" type="checkbox">Two </input></li>
+                                                    <li><input id="3diner" style="color:black; text-align:center" type="checkbox">Three </input></li>
+                                                    <li><input id="4diner" style="color:black; text-align:center" type="checkbox">Four </input></li>
+                                                    <li><input id="5diner" style="color:black; text-align:center" type="checkbox">Five </input></li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row">
+                                    <button type="button" class="btn btn-success btn-sm">Tip.it</button>
                                     </div>
                                     <div class="row" style="height:10px"></div>
 
@@ -155,7 +160,7 @@
                                         <h4>You total tip is:</h4>
                                     </div>
                                     <div class="row">
-                                        <h2>1.55</h2>
+                                        <h2>@@@</h2>
                                     </div>
 
                                     <div class="row">
