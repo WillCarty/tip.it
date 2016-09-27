@@ -27,7 +27,7 @@ function clickHandler () {
 function EbillAmount() {
     var Etotal = $("#billAmount").val();
     var EnewTotal = Etotal * .25
-    grandTotal = +EnewTotal
+    grandTotal = +EnewTotal 
   partyAmount()
 }
 function GbillAmount() {
@@ -39,7 +39,7 @@ function GbillAmount() {
 function AbillAmount() {
     var Atotal = $("#billAmount").val();
     var AnewTotal = Atotal * .15
-    grandTotal = +AnewTotal
+    grandTotal = +AnewTotal 
     partyAmount();
 }
 function BbillAmount() {
@@ -54,28 +54,34 @@ function partyAmount(){
 if(document.getElementById('2diner').checked) {
     var twoDiners = Math.round(grandTotal / 2);
     textbox = document.getElementById('grandTotaltext');
-    textbox.value ="$" + twoDiners + "." + +0 + +0 ;
+    textbox.value ="$" + +twoDiners + "." + +0 + +0 ;
     
     
 }
 else if(document.getElementById('3diner').checked){
     var threeDiners = Math.round(grandTotal / 3);
     textbox = document.getElementById('grandTotaltext');
-    textbox.value = "$" + threeDiners + "." + +0 + +0 ; ;
+    textbox.value = "$" + +threeDiners + "." + +0 + +0 ; ;
 
 }
 
 else if(document.getElementById('4diner').checked){
-    var fourDiners = grandTotal / 4;
+    var fourDiners = Math.round(grandTotal / 4);
     textbox = document.getElementById('grandTotaltext');
-    textbox.value = "$" + fourDiners + "." + +0 + +0 ; ;
+    textbox.value = "$" + +fourDiners + "." + +0 + +0 ; ;
 }
 else if(document.getElementById('5diner').checked){
     var fiveDiners = Math.round(grandTotal / 5);
     textbox = document.getElementById('grandTotaltext');
-    textbox.value = "$" + fiveDiners + "." + +0 + +0 ; ;
+    textbox.value = "$" + +fiveDiners + "." + +0 + +0 ; ;
+}
+else if(document.getElementById("1diner").checked){
+    var oneDiner=Math.round(grandTotal);
+    textbox = document.getElementById('grandTotaltext');
+    textbox.value ="$" + +oneDiner + "." + +0 + +0 ;
 }
 }
+
 $(function () {
     $("#tipIt").on("click", clickHandler);
      isNumberKey();
