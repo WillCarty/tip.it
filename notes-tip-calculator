@@ -1,0 +1,12 @@
+notes
+
+
+ $("#excellent").on("click", EbillAmount);
+    $("#bad").on("click", BbillAmount);
+    $("#good").on("click", GbillAmount);
+    $("#average").on("click", AbillAmount);
+};
+
+
+.empty()
+

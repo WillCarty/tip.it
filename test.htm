@@ -19,7 +19,9 @@
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/bd0fb5033f2576166c03cfc1612cbc44.js"
         async="async"></script>
-
+    <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "503b0b71-7ad2-4b42-a633-db0afb6c60fe", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 
 </head>
@@ -42,15 +44,20 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     </ul>
-                    
-                        
+
+
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Share this <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li>
-
-                                </li>
+                                
+                                   <li> <span class='st_sharethis' displayText='ShareThis'></span></li>
+                                   <li> <span class='st_facebook' displayText='Facebook'></span></li>
+                                    <li><span class='st_twitter' displayText='Tweet'></span></li>
+                                    <li><span class='st_linkedin' displayText='LinkedIn'></span></li>
+                                    <li><span class='st_pinterest' displayText='Pinterest'></span></li>
+                                    <li><span class='st_email' displayText='Email'></span></li>
+                              
 
                             </ul>
                         </li>
@@ -59,6 +66,8 @@
                             <li>
                                 <div class="fb-share-button navbar-brand" data-href="" data-layout="button_count" data-mobile-iframe="true">
                                     <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse"><img src="http://picresize.com/picresize-assets/gfx/share-facebook.png" /></a>
+                           
+                                  
                             </li>
                         </ul>
 
@@ -102,13 +111,21 @@
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Was The Service?
                                               <span class="caret"></span></button>
                                             <ul class="dropdown-menu poisition" style="text-align:center; background-color:black">
-                                                
-                                                    <li><input id="excellent" style="color:black; text-align:center" type="checkbox">Excellent 25% </input></li>
-                                                    <li><input id="good" style="color:black; text-align:center" type="checkbox">Good 20% </input></li>
-                                                    <li><input id="average" style="color:black; text-align:center" type="checkbox">Average 15% </input></li>
-                                                    <li><input id="bad" style="color:black; text-align:center" type="checkbox">Bad 10% </input></li>
-                                                   
-                                                
+
+                                                <li><input id="excellent" style="color:black; text-align:center" type="checkbox">Excellent
+                                                    25% </input>
+                                                </li>
+                                                <li><input id="good" style="color:black; text-align:center" type="checkbox">Good
+                                                    20% </input>
+                                                </li>
+                                                <li><input id="average" style="color:black; text-align:center" type="checkbox">Average
+                                                    15% </input>
+                                                </li>
+                                                <li><input id="bad" style="color:black; text-align:center" type="checkbox">Bad
+                                                    10% </input>
+                                                </li>
+
+
                                             </ul>
                                         </div>
                                     </div>
@@ -128,20 +145,31 @@
                                         <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="dropDown" style="text-align:center">
                                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">How Many?</button>
-                                              <span class="caret"></span></button>
+                                                <span class="caret"></span></button>
                                                 <ul class="dropdown-menu" style="text-align:center; background-color:black">
-                                                    <li><input id="1diner" style="color:black; text-align:center" type="checkbox">One </input></li>
-                                                    <li><input id="2diner" style="color:black; text-align:center" type="checkbox">Two </input></li>
-                                                    <li><input id="3diner" style="color:black; text-align:center" type="checkbox">Three </input></li>
-                                                    <li><input id="4diner" style="color:black; text-align:center" type="checkbox">Four </input></li>
-                                                    <li><input id="5diner" style="color:black; text-align:center" type="checkbox">Five </input></li>
-                                                    
+                                                    <li><input id="1diner" style="color:black; text-align:center" type="checkbox">One
+                                                        </input>
+                                                    </li>
+                                                    <li><input id="2diner" style="color:black; text-align:center" type="checkbox">Two
+                                                        </input>
+                                                    </li>
+                                                    <li><input id="3diner" style="color:black; text-align:center" type="checkbox">Three
+                                                        </input>
+                                                    </li>
+                                                    <li><input id="4diner" style="color:black; text-align:center" type="checkbox">Four
+                                                        </input>
+                                                    </li>
+                                                    <li><input id="5diner" style="color:black; text-align:center" type="checkbox">Five
+                                                        </input>
+                                                    </li>
+
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                    <button id="tipIt" type="button" class="btn btn-primary btn-sm">Tip.it</button>
+                                        <button style="margin-right:10px" id="tipIt" type="button" class="btn btn-primary btn-sm">Tip.it</button>
+                                        <button style="margin-right:15px" id="tipClear" type="button" onClick="window.location.reload();" class="btn btn-warning btn-sm">Clear</button>
                                     </div>
                                     <div class="row" style="height:10px"></div>
 
@@ -162,7 +190,7 @@
 
                                     <div class="row">
 
-                                        
+
 
 
                                     </div>
